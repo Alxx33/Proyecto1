@@ -2,9 +2,14 @@
 //  ViewController.swift
 //  ProyectoTienda
 //
-//  Created by Usuario invitado on 28/9/18.
+//  Created
+//Alejandro Barrón Solis
+//Isaac Hernandez Loredo
+//Eduardo Quintero Juan
+//on 28/9/18.
 //  Copyright © 2018 Usuario invitado. All rights reserved.
 //
+
 
 import UIKit
 
