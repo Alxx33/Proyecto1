@@ -43,18 +43,21 @@ class ViewController: UIViewController {
      
     }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
         data.append(datos(nombre: "Ale", pw: "gordito"))
         
-        var nom = user.text
-        var pw = password.text
         
+//        var nom = user.text
+//        var pw = password.text
       
     }
 
-
-
+   
 }
+   
+
+
 

@@ -52,7 +52,7 @@
                                 <state key="normal" title="Enter"/>
                                 <connections>
                                     <action selector="Ingresar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rr4-hi-XVc"/>
-                                    <segue destination="zV7-6S-duA" kind="show" id="Oaa-DH-NsG"/>
+                                    <segue destination="zV7-6S-duA" kind="show" identifier="vista3" id="Oaa-DH-NsG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Aun no estas registrado?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcr-LH-Ez9">
@@ -62,12 +62,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyf-RP-GqM">
-                                <rect key="frame" x="158" y="518" width="78" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puk-sr-gW9">
+                                <rect key="frame" x="169" y="564" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Registrarse"/>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="eRe-jH-MHd" kind="show" id="qnI-mB-qyA"/>
+                                    <segue destination="eRe-jH-MHd" kind="show" id="Gyx-B8-Cv2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -127,12 +127,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMT-rf-0qJ">
-                                <rect key="frame" x="153" y="493" width="73" height="30"/>
+                                <rect key="frame" x="153" y="493" width="73" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Registarse"/>
+                                <connections>
+                                    <action selector="registrar:" destination="eRe-jH-MHd" eventType="touchUpInside" id="f2T-aY-tV7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IyW-Ja-50J">
-                                <rect key="frame" x="50" y="39" width="34" height="30"/>
+                                <rect key="frame" x="50" y="39" width="46" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="back"/>
                             </button>
@@ -143,10 +146,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aai-jd-GHZ">
+                                <rect key="frame" x="50" y="39" width="46" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="back"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7kD-Jn-635"/>
                     </view>
+                    <connections>
+                        <outlet property="user" destination="9uZ-Ku-Phb" id="gj5-uB-3hP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GFN-AD-X5S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

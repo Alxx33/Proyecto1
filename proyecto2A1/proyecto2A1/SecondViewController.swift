@@ -9,11 +9,29 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    var lista : [String] = []
+   
+    
+    @IBOutlet weak var us: UITextField!
+    var dataFromFirstView : Int = 0
+    
+    
+    
+    
 
+    @IBAction func registrar(_ sender: UIButton) {
+        
+        
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
+        lista.append(us.text!)
+
+        print (lista)
     }
 
 }
